@@ -27,3 +27,5 @@ function[w] = simpson(a, b, n, av)
     simres = simres + yarr(b);
     w = (h / 3) * simres;
 end
+
+% 2.6x^2 * lnx [1,2; 2,2] n=10
