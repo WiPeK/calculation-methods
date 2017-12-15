@@ -1,0 +1,55 @@
+body {
+	background: #D2D2D2;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+header, footer {
+	background: #008000;
+	color:#F5F1F1;
+	padding: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.middle-bar {
+	display: flex;
+	flex-direction: row;
+}
+
+.menu {
+	list-style: none;
+	min-width: 200px;
+}
+
+.menu li a{
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu li {
+	padding: 10px;
+}
+
+.menu li:hover {
+	background: #9B9595;
+}
+
+.content-bar {
+	padding: 15px;
+	width: 100%;
+}
+
+.article-form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.article-form input {
+	padding: 3px;
+}
