@@ -24,3 +24,5 @@ function simpson(a, b, n, av) {
 }
 
 console.log(simpson(1.2, 2.2, 10, 2))
+
+//2.6x^2 *lnx
