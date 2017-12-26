@@ -5,12 +5,15 @@ function custom(x) {
 }
 
 function bisekcja(a, b, e) {
-	x1 = a;
-	x2 = b;
+	let x1 = a;
+	let x2 = b;
+	let k = 0;
 	while (1) {
+		if (k++ === 100) break;
 		x = (x1 + x2) / 2;
 		y = custom(x);
 		y1 = custom(x1);
+		console.log(y);
 		if (Math.abs(y) < e) {
 			return x;
 		} else {

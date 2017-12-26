@@ -4,7 +4,7 @@
 
 function taylor(x, y, h) {
 	fx = 0;
-	let tab = new Array(x.length).fill(new Array(x.length).fill(0));
+	let tab = new Array(x.length+1).fill(new Array(x.length).fill(0));
 
 	for (let i = 0; i < x.length; i++) {
 		tab[i][0] = x[i];
