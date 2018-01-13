@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="badania.xsl"?>
+<!DOCTYPE badania 
+[
+<!ATTLIST badanie id CDATA #REQUIRED>
+<!ELEMENT pacjent (#PCDATA)>
+<!ELEMENT lekarz (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT diagnoza (#PCDATA)>
+<!ELEMENT leki (#PCDATA)>
+<!ELEMENT badanie (pacjent,lekarz,data,diagnoza, leki)>
+]>
+<badania>
+	<badanie id="1">
+		<pacjent>1</pacjent>
+		<lekarz>1</lekarz>
+		<data>15.01.2018</data>
+		<diagnoza>Choroba 1</diagnoza>
+		<leki>Lek 1</leki>
+	</badanie>
+	<badanie id="2">
+		<pacjent>2</pacjent>
+		<lekarz>2</lekarz>
+		<data>14.01.2018</data>
+		<diagnoza>Choroba 2</diagnoza>
+		<leki>Lek 2</leki>
+	</badanie>
+	<badanie id="3">
+		<pacjent>3</pacjent>
+		<lekarz>3</lekarz>
+		<data>15.01.2018</data>
+		<diagnoza>Choroba 1</diagnoza>
+		<leki>Lek 1</leki>
+	</badanie>
+	<badanie id="4">
+		<pacjent>4</pacjent>
+		<lekarz>1</lekarz>
+		<data>16.01.2018</data>
+		<diagnoza>Choroba 3</diagnoza>
+		<leki>Lek 3</leki>
+	</badanie>
+	<badanie id="5">
+		<pacjent>5</pacjent>
+		<lekarz>2</lekarz>
+		<data>11.01.2018</data>
+		<diagnoza>Choroba 1</diagnoza>
+		<leki>Lek 4</leki>
+	</badanie>
+	<badanie id="5">
+		<pacjent>6</pacjent>
+		<lekarz>3</lekarz>
+		<data>12.01.2018</data>
+		<diagnoza>Choroba 2</diagnoza>
+		<leki>Lek 1</leki>
+	</badanie>
+	<badanie id="5">
+		<pacjent>7</pacjent>
+		<lekarz>1</lekarz>
+		<data>15.01.2018</data>
+		<diagnoza>Choroba 4</diagnoza>
+		<leki>Lek 5</leki>
+	</badanie>
+	<badanie id="5">
+		<pacjent>1</pacjent>
+		<lekarz>2</lekarz>
+		<data>14.01.2018</data>
+		<diagnoza>Choroba 5</diagnoza>
+		<leki>Lek 2</leki>
+	</badanie>
+	<badanie id="5">
+		<pacjent>2</pacjent>
+		<lekarz>3</lekarz>
+		<data>15.01.2018</data>
+		<diagnoza>Choroba 1</diagnoza>
+		<leki>Lek 3</leki>
+	</badanie>
+</badania>
