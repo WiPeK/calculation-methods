@@ -1,0 +1,25 @@
+function[w] = optymalizacja(f, a, b, e) 
+    l = (b - a) / e;
+    k = fibonacciElement(Math.round(l));
+    aArray = (l);
+    bArray = (l);
+    cArray = (l);
+    dArray = (l);
+    aArray(0) = a;
+    bArray(0) = b;
+    cArray(0) = bArray[0] - (((fibonacci(k-1)/fibonacci(k)))*(bArray[0] - aArray[0]));
+    dArray[0] = aArray[0] + bArray[0] - cArray[0];
+
+    for (let i = 0; i < (k-4); i++) {
+        if (f(cArray[i]) < f(dArray[i])) {
+            aArray[i+1] = aArray[i];
+            bArray[i+1] = dArray[i];
+        } else {
+            bArray[i+1] = bArray[i];
+            aArray[i+1] = c[i];
+        }
+        cArray[i+1] = bArray[i+1] - ((fibonacci(k-i-2)/fibonacci(k-i-1)) * (bArray[i+1] - aArray[i+1]));
+        dArray[i+1] = aArray[i+1] + bArray[i+1] - cArray[i+1];
+    }
+    return cArray[k-3];
+        end
