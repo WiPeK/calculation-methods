@@ -1,5 +1,5 @@
 function[i] = fibonacciElement(val) 
-        fib = [];
+        fib = zeros(1, val);
         fib(1) = 0;
         fib(2) = 1;
 
@@ -16,9 +16,10 @@ function[i] = fibonacciElement(val)
         i = 3;
         while true
             fib(i) = fib(i - 2) + fib(i - 1);
-            i = i + 1;
+       
             if (fib(i) > val)
-                return;
+                break;
             end
+            i = i + 1;
         end
     end

@@ -44,13 +44,13 @@ function optymalizacja(f, a, b, e) {
     cArray[0] = bArray[0] - (((fibonacci(k-1)/fibonacci(k)))*(bArray[0] - aArray[0]));
     dArray[0] = aArray[0] + bArray[0] - cArray[0];
 
-    for (let i = 0; i < (k-4); i++) {
+    for (let i = 0; i < (k-3); i++) {
         if (f(cArray[i]) < f(dArray[i])) {
             aArray[i+1] = aArray[i];
             bArray[i+1] = dArray[i];
         } else {
             bArray[i+1] = bArray[i];
-            aArray[i+1] = c[i];
+            aArray[i+1] = cArray[i];
         }
         cArray[i+1] = bArray[i+1] - ((fibonacci(k-i-2)/fibonacci(k-i-1)) * (bArray[i+1] - aArray[i+1]));
         dArray[i+1] = aArray[i+1] + bArray[i+1] - cArray[i+1];
